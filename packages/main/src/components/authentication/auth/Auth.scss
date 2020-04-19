@@ -1,0 +1,6 @@
+@import 'shared/styles/variables.scss';
+
+:local(.Auth) {
+  position: relative;
+  top: $header-size;
+}

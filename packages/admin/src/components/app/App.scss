@@ -1,0 +1,10 @@
+@import 'shared/styles/variables.scss';
+
+:local(.App) {
+
+  section {
+    position: relative;
+    top: $header-size;
+  }
+
+}

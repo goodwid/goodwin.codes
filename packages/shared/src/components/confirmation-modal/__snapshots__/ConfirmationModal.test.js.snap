@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmationModal page matches the snapshot 1`] = `
+<article
+  className="ConfirmationModal"
+>
+  <div
+    className="overlay"
+    onClick={[MockFunction]}
+  />
+  <aside
+    className="modal-body"
+  >
+    <button
+      className="close-button"
+      onClick={[MockFunction]}
+    >
+      <MdClose />
+    </button>
+    <main
+      className="content"
+    >
+      <h2
+        className="question"
+      >
+        Are you sure?
+      </h2>
+      <section
+        className="selection-buttons"
+      >
+        <button
+          className="btn-approve"
+          onClick={[MockFunction]}
+        >
+          YES
+        </button>
+        <button
+          className="btn-decline"
+          onClick={[MockFunction]}
+        >
+          NO
+        </button>
+      </section>
+    </main>
+  </aside>
+</article>
+`;

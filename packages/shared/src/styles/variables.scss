@@ -1,0 +1,148 @@
+// Colors
+$light-blue: rgb(222, 234, 238);
+$olive-green: rgb(178, 203, 188);
+$salmon: rgb(237, 162, 155);
+$notification-red: #fa3e3e;
+$warning-button-color: red;
+$warning-button-color-opacity: rgba(255, 0, 0, 0.7);
+$confirmation-button-color: green;
+$confirmation-button-color-opacity: rgba(0, 128, 0, 0.5);
+$red: rgb(199, 77, 79);
+$light-gray: rgb(245, 245, 245);
+$off-white: rgb(243, 243, 243);
+$off-white-dark: rgb(235, 233, 233);
+$medium-gray: rgb(190, 190, 190);
+$orange: #ffb74d;
+$transparent-orange: rgba(255, 183, 77, 0.15);
+$dark-orange: #c88719;
+$alchemy-black: rgb(27, 27, 27);
+$gray: gray;
+$green: #a0c55f;
+$darkgreen: #a0c55f;
+$white: #ffffff;
+$cyan: rgb(100, 171, 192);
+$light-sky-blue: rgba(59, 153, 252, 0.3);
+$sky-blue: rgb(59, 153, 252);
+
+$main-header-color: $light-blue;
+$sub-header-color: rgb(37, 37, 37);
+$card-background-blue: #1976d2;
+$primary-text: $alchemy-black;
+$card-border-color: #bbdefb;
+$card-underline-color: #ff9800;
+$card-underline-color-opacity: rgba(255, 155, 0, 0.5);
+$default-modal-background: $light-gray;
+$default-modal-shadow-color: rgba(51, 51, 51, 0.8);
+$default-modal-overlay-color: rgba(0, 0, 0, 0.5);
+$primary-background-color: $alchemy-black;
+
+// Fonts
+$default-font: 'Roboto', sans-serif;
+$header-font: 'Lato', sans-serif;
+
+// Font sizes
+$default-heading-size: 1.7rem;
+$default-text-size: 1.2rem;
+$default-caption-size: 1rem;
+
+// Sizing
+$header-size: 5vh;
+$content-size: (100vh - $header-size);
+
+// Confirmation modal yes/no buttons
+@mixin selection-btn-color($to-fill) {
+  color: $to-fill;
+  border-color: $to-fill;
+}
+
+/* ----------- (Pixel, iPhone 6+,7+,8+,X) ----------- */
+@mixin media-for-taller-phones {
+  @media only screen and (min-device-width: 375px) and (min-device-height: 668px) and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+/* ----------- (Galaxy, iPhone 5/6) ----------- */
+@mixin media-for-shorter-phones {
+  @media screen and (max-device-height: 667px) {
+    @content;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C, 5SE ----------- */
+@mixin media-for-iPhone-5SE {
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+/* ----------- Small Display ----------- */
+@mixin small-display {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+/* ----------- Job form positioning ----------- */
+@mixin centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    top: 52%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Menu fade in animation
+@mixin menu-slide-from-right{
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(+100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+}
+
+@mixin menu-slide-from-top{
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+}
+
+@mixin animate($style, $duration, $timing) {
+  animation: $style $duration $timing;
+}
+
+@mixin menu-right {
+  @include animate (slide-in, 0.4s, ease-in-out);
+  @include menu-slide-from-right;
+}

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile page matches the snapshot 1`] = `
+<article
+  className="Profile"
+>
+  <section
+    className="profile-header"
+  >
+    <FaEdit
+      className="edit"
+    />
+    <FaCog
+      className="settings"
+    />
+    <h1
+      className="name"
+    >
+      Your Name
+    </h1>
+    <h2
+      className="description"
+    >
+      Description
+    </h2>
+  </section>
+  <section
+    className="details-section"
+  >
+    <Stars
+      rating={3}
+    />
+    <section
+      className="bio-section"
+    >
+      <h3>
+        Bio
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+  </section>
+</article>
+`;

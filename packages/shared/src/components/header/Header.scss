@@ -1,0 +1,26 @@
+@import 'shared/styles/variables.scss';
+
+:local(.Header) {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: 100vw;
+  height: $header-size;
+  background-color: $main-header-color;
+  font-family: $default-font;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+
+  .header-icon-left {
+    position: relative;
+    right: 1px;
+  }
+
+  .header-icon-right {
+    position: relative;
+    left: 1px;
+  }
+}

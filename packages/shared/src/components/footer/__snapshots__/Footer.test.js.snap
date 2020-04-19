@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer page matches the snapshot 1`] = `
+<nav
+  className="Footer"
+>
+  <NavLink
+    activeClassName="active"
+    aria-label="Visit your profile to edit information about yourself"
+    className="nav-button"
+    exact={true}
+    key="0"
+    to="/profile"
+  >
+    <FaUser
+      className="icon"
+    />
+    Profile
+  </NavLink>
+  <NavLink
+    activeClassName="active"
+    aria-label="Visit the job queue to see a list of available jobs"
+    className="nav-button"
+    exact={true}
+    key="1"
+    to="/"
+  >
+    <FaList
+      className="icon"
+    />
+    Job List
+  </NavLink>
+  <NavLink
+    activeClassName="active"
+    aria-label="Visit your jobs list to see a list of your completed, applied and scheduled jobs"
+    className="nav-button"
+    exact={true}
+    key="2"
+    to="/myjobs"
+  >
+    <FaIdBadge
+      className="icon"
+    />
+    My Jobs
+  </NavLink>
+</nav>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stars page matches the snapshot 1`] = `
+<span
+  className="Stars"
+>
+  <FaStar
+    className="icon"
+  />
+  <FaStar
+    className="icon"
+  />
+  <FaStar
+    className="icon"
+  />
+  <FaStar
+    className="icon"
+  />
+  <FaRegStar
+    className="icon"
+  />
+</span>
+`;

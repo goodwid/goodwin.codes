@@ -1,0 +1,171 @@
+
+[
+  {
+    "title": "Name",
+    "choices": []
+  },
+  {
+    "title": "Creative Process",
+    "choices": [
+      "curious exploration of materials and tools",
+      "thoughtful engagement of historical concepts and skills",
+      "holistic thinking in the design process",
+      "active participation in the acquisition of artistic skills and techniques",
+      "excited engagement in brainstorming and idea generation",
+      "focused intention in creating artwork which they find aesthetically pleasing"
+    ]
+  },
+  {
+    "title": "Flow",
+    "choices": [
+      "shows the capability to dive deeply into the process of creating",
+      "shows great focus and attention. They show intentionality in their work",
+      "shows ebb and flow. They work diligently at times, while finding themselves off-task other times",
+      "shows a struggle to find their ideal creative zone. This is an area of improvement they could work on during class time, recognizing and seeking their ideal work ethic for creating"
+
+    ]
+  },
+  {
+    "title": "Project",
+    "choices": [
+      "ancient cave painting inspired pastel drawing of an animal",
+      "hieroglyphic inspired narrative and character infused comic strip",
+      "emotive expression and character inspired ceramic head sculpture",
+      "culturally inspired personal mixed media mask",
+      "Secret of Kells inspired watercolor painting"
+    ]
+  },
+  {
+    "title": "Elements of Art",
+    "choices": [
+      "line drawing",
+      "color hue",
+      "visual form (shape)",
+      "sculptural form",
+      "ceramic texture",
+      "visual space",
+      "visual value"
+    ]
+  },
+  {
+    "title": "Principles of Art",
+    "choices": [
+      "visual movement",
+      "facial proportion",
+      "perspective",
+      "visual representation of time",
+      "focal point through symbolism",
+      "color contrast",
+      "visual balance",
+      "visual emphasis"
+    ]
+  },
+  {
+    "title": "Composition",
+    "choices": [
+      "a strong sense of overall visual harmony",
+      "good use of a harmonious color scheme",
+      "interesting variation in artistic technique",
+      "good variation in material usage and skill",
+      "excellent use of visual narrative and space",
+      "interesting choice in visual contrast and focal point",
+      "good placement of overall visual shapes/forms",
+      "adept usage of skills taught",
+      "great balance of compositional elements",
+      "wonderful craftsmanship and use of detail"
+    ]
+  },
+  {
+    "title": "Process and Skills",
+    "choices": [
+      "source inspiration for character and narrative ideas",
+      "the artistic skills and materials taught in the lessons",
+      "experiential learning through doing",
+      "material experimentation to find different techniques and artistic styles",
+      "the entire creative process, from inspiration to final artwork",
+      "source imagery from artists and artistic period",
+      "discovery through positive “failure” in the creative process to learn new ways of creating and making"
+
+    ]
+  },
+  {
+    "title": "Art Historical Principles",
+    "choices": [
+      "visual movement through the figurative form",
+      "tonal value through neutral color hues",
+      "spatial expression through layering of shape, intensity, detail, and overlapping",
+      "character expression through facial qualities",
+      "figurative expression through three dimensional sculpture",
+      "cultural influence in mask making",
+      "color theme as expression of idea",
+      "nontraditional art materials in unique and visually creative ways"
+    ]
+  },
+  {
+    "title": "Creative Voice",
+    "choices": [
+      "inclusion of personal narrative in their work",
+      "unique drawing qualities that show their own artistic style",
+      "strong sense of color theory in their work that creates an individual color palette",
+      "obvious passion and drive for their own creative expression",
+      "persistent desire to do their best work for themselves and express their own ideas",
+      "fun expressions of historical art influences",
+      "interesting usage of contemporary cultural image",
+      "the usage of repeating designs",
+      "the usage of repeating characters",
+      "the usage of repeating ideas",
+      "color scheme preference",
+      "conceptual ideas that represent their personal views"
+    ]
+  },
+  {
+    "title": "Inspiration",
+    "choices": []
+  },
+  {
+    "title": "Responsibiliy",
+    "choices": [
+      "helping to maintain a clean and organized classroom",
+      "treating tools and supplies with care",
+      "using their class time to focus diligently",
+      "inconsistent attempts to clean (improvement is needed)",
+      "inappropriate usage of tools and materials (improvement is needed)",
+      "a lack of focus and attention (improvement is needed)",
+      "asking excellent questions in class",
+      "participating in class discussions/lessons",
+      "seeking out help and advice when needed"
+    ]
+  },
+  {
+    "title": "Respect",
+    "choices": [
+      "treating other’s art with kindness",
+      "treating other people with kindness",
+      "treating the classroom environment with care",
+      "arriving to class prepared",
+      "losing their work consistently (improvement is needed)",
+      "not sharing materials with their peers (improvement is needed)",
+      "being late to class (improvement is needed)",
+      "not respecting other people’s artwork (improvement is needed)"
+    ]
+  },
+  {
+    "title": "Evaluation",
+    "choices": [
+      "an awesome",
+      "a wonderful",
+      "a good",
+      "a great",
+      "a stupendous",
+      "a lovely",
+      "an engaging",
+      "a phenomenal",
+      "a positive",
+      "an enjoyable"
+    ]
+  },
+  {
+    "title": "Addendum",
+    "choices": []
+  }
+]

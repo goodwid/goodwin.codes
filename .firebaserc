@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "goodwin-codes"
+  },
+  "targets": {
+    "goodwin-codes": {
+      "hosting": {
+        "main": [
+          "goodwin-codes"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// This file controls the data structure and CRUD access for our Firebase database
+// WARNING: Providing access to a parent provides RECURSIVE ACCESS to ALL children nodes.
+
+// `firebase deploy --only database` to deploy these rules
+// They will compile to the rules visible in the Firebase database console, under the tab rules
+
+//RESOURCES:
+// https://github.com/firebase/bolt/blob/master/docs/guide.md
+// https://github.com/firebase/bolt/blob/master/docs/language.md
+// https://medium.com/step-up-labs/advanced-tips-for-firebase-cloud-functions-bolt-testing-ci-f15f430e8675
+// https://medium.com/evenbit/securing-your-firebase-app-part-1-5eb4dce4c852
+
+//ADMIN
+type Admin {
+  isAdmin: Boolean
+}
+
+path /admin {
+  create() { isAdmin() }
+  read() { isAdmin() }
+  update() { isAdmin() }
+  delete() { isAdmin() }
+}
+
+// Users use this path to claim that they own a business
+// Admins use this path to confirm or deny ownership of a business
+// path /claimsByBusiness {
+//   read() { isAdmin() }
+// }
+
+
+// USERS
+type User {
+  photoUrl: String,
+  dateJoined: String, 
+  username: String,
+  notification: String | Null,
+  hasPassword: Boolean,
+}
+
+path /users {
+  index() { ["username"] }
+  read() { true }
+}
+
+path /users/{uid} {
+  index() { ["username", "photoUrl", "dateJoined"]}
+  create() { isCurrentUser(prior(uid)) }
+  read() { true }
+  update() { isAdmin() || isCurrentUser(prior(uid)) }
+  delete() { isAdmin() || isCurrentUser(prior(uid)) }
+}
+
+// In case we ever want to double check the submission of an appropriate link to the database
+// type Link extends String {
+//   validate ( this.test(/^(ht|f)tp(s?):\\/\\/[0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*((0-9)*)*(\\/?)([a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\+&=%\\$#_]*)?$/))
+// }
+
+// SHARED TYPES
+type FirebaseId extends String {
+  //using for userId as well. Be sure to check
+  validate() { this.length >= 20 && this.test(/^[A-Za-z0-9\-_]+$/i) }
+}
+
+type Email extends String {
+  validate() { this.test(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) }
+  //be sure to check this regex for valid emails!
+
+  read() { isCurrentUser(uid) }
+}
+
+type Title extends String {
+  validate() { hasLength(this, 1, 73) && this.test(/.*[^ ].*/)}
+}
+
+//FUNCTIONS
+hasLength(text, min, max) { text.length >= min && text.length <= max }
+isCurrentUser(uid) { isSignedIn() && auth.uid === uid }
+isSignedIn() { auth !== null }
+isAdmin() { root.admin[auth.uid] !== null }

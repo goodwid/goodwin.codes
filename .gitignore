@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+yarn-error.log
+
+# production
+build/
+
+# secrets
+.env
+
+# misc
+.DS_Store
+npm-debug.log*
+package-lock.json
+Untitled.code-workspace
+
+.vscode/
+packages/app/coverage/
+
+.firebase

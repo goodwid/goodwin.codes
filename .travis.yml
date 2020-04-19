@@ -1,0 +1,21 @@
+language: node_js
+node_js: '12'
+dist: bionic
+cache:
+  yarn: true
+  directories:
+  - node_modules
+
+before_deploy: yarn build:all
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  # See https://docs.travis-ci.com/user/deployment/firebase/#generating-your-firebase-token to generate a token
+  token:
+    secure: <Token>
+  # Firebase project name
+  project: <Project_Name>
+  message: Deploying to <Project_Name> firebase app...
+  on:
+    branch: dev
+after_deploy: echo 'You just deployed on DEV via travisCI!'
