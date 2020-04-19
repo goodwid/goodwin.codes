@@ -1,3 +1,3 @@
-# Teacher's comment generator
+# david.goodwin.codes
 
-Made by David, for his awesome wife.
+My personal page

@@ -1,8 +1,15 @@
 @import './_reset.scss';
 @import './variables.scss';
-// 
+//
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap');
+
+@font-face {
+  font-family: "DS Chocolade";
+  src: url("../../assets/fonts/Chocolade/DSChocolade.eot");
+  src: url("../../assets/fonts/Chocolade/DSChocolade.woff2") format("woff2"),
+}
+
 
 * {
   box-sizing: border-box;

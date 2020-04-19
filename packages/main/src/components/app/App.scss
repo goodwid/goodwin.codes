@@ -1,5 +1,12 @@
 @import 'shared/styles/variables.scss';
 
 :local(.App) {
-  
+  background-image: url("../../../../shared/assets/newspaper-texture.jpg");
+  $margin: .5rem;
+  bottom: $margin;
+  right: $margin;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
 }
