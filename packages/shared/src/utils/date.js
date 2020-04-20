@@ -5,3 +5,9 @@ export const convertISOStringToMonDay = date => {
   const formattedDate = `${tempDate[1]} ${+tempDate[2]}`;
   return formattedDate;
 };
+
+export const daysFromDate = date => {
+  const origin = new Date(date);
+  console.log(origin);
+  return 144;
+};

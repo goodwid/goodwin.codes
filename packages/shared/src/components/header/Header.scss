@@ -1,23 +1,39 @@
 @import 'shared/styles/variables.scss';
 
 :local(.Header) {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-content: center;
+  display: inline-block;
   width: 100vw;
   height: $header-size;
-  font-family: $header-font;
-  font-size: 4rem;
-  font-weight: 300;
-  padding: 3rem;
+  // overflow-x: auto;
+  text-align: center;
 
+  h1 {
+    font-family: $header-font;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-size: 80px;
+    // text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+  }
 
+  aside {
+    font-family: sans-serif;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    text-transform: uppercase;
+  }
 
-  .header-icon-left {
+  .header-box {
     position: relative;
-    right: 1px;
+    width: 12%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
   }
 
   .header-icon-right {
@@ -25,5 +41,4 @@
     left: 1px;
   }
 
-  border-bottom: 1px double black;
 }

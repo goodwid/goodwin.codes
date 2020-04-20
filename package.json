@@ -24,7 +24,7 @@
     "build:main:dev": "webpack --env.app=main --progress --mode=development",
     "test": "yarn workspaces run test -i",
     "test:watch": "yarn run test --watch",
-    "deploy": "yarn run build:gen && firebase deploy",
+    "deploy": "yarn run build:main && firebase deploy",
     "deploy:database": "firebase-bolt rtdb.rules.bolt && firebase deploy --only database"
   },
   "devDependencies": {

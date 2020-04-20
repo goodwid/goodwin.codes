@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "user-facing app",
+  "main": "index.js",
+  "license": "no",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src",
+    "build": "cd ../.. && yarn build:main",
+    "build:cordova": "cd ../.. && yarn run build:main:cordova",
+    "build:cordova:dev": "cd ../.. && yarn run build:main:cordova:dev",
+    "start": "cd ../.. && yarn start:main",
+    "jest": "yarn run test",
+    "test": "jest",
+    "test:watch": "yarn run test -- --watch"
+  }
+}

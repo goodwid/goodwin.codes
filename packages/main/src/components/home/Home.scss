@@ -2,47 +2,22 @@
 
 :local(.Home) {
   position: absolute;
-  top: $header-size;
+  top: 10rem;
   width: 100%;
   height: $content-size;
 
   font-family: $default-font;
   overflow: hidden;
-  z-index: -1;
 
   display: flex;
   flex-direction: row;
 
-  $selector-width: 20vw;
-  $aside-width: (100vw - $selector-width);
+  .content {
+    margin-top: 1rem;
 
-  div {
-    border: 1px solid black;
-    background-color: $transparent-orange;
-  }
-
-  label, input {
-    border: 1px solid black;
-    padding: 3px 10px;
-    border-radius: 5px;
-    background-color: white;
-  }
-  .selector {
-    width: $selector-width;
-    height: 100%;
+    p {
+      ;
+    }
   }
 
-  .picker {
-    width: 100%;
-    height: 70%;
-  }
-
-  .display {
-    height: 30%;
-  }
-
-  aside {
-    width: $aside-width;
-    height: 100%;
-  }
 }
