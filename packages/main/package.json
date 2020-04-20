@@ -14,5 +14,6 @@
     "jest": "yarn run test",
     "test": "jest",
     "test:watch": "yarn run test -- --watch"
-  }
+  },
+  "dependencies": {}
 }

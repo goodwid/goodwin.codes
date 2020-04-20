@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styles from './Header.scss';
 import Menu from './Menu';
 import { app } from 'root/app.config.js';
-import { daysFromDate } from 'shared/utils/date';
-const ORIGIN = 123459720000;
+import { generateSubHeader } from 'shared/utils/date';
 
 
 
@@ -12,9 +11,8 @@ import { FaBars as MenuIcon, FaBell as Notification } from 'react-icons/fa';
 
 const Header = ({ menuItems }) => {
 
-  const year = Date.get
-
   const [showMenu, setShowMenu] = useState(false);
+  const subHeader = generateSubHeader();
 
   const handleMenu = (showMenu = false) => {
     setShowMenu({ showMenu });
@@ -27,12 +25,14 @@ const Header = ({ menuItems }) => {
   return (
     <header className={styles.Header}>
       <div className="header-box">
-        This is extra stuff;
+        Today's Weather:Hi 54F, cloudy, late showers.
       </div>
       <h1>{app.title}</h1>
-
-      <aside>
-        Portland, OR, Monday April 20, 2020  Volume XLVI Issue No. {daysFromDate(ORIGIN)}
+      <div className="header-box">
+        Daily Circulation: 1300
+      </div>
+      <aside className="subheader" >
+        {subHeader}
       </aside>
     </header>
   );

@@ -20,4 +20,187 @@
     }
   }
 
+  // ganked from https://codepen.io/silkine/pen/jldif?editors=0100
+  
+  .column{
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+
+    .column + .column {
+      border-left: 1px solid #2f2f2f;
+    }
+    .headline{
+        text-align: center;
+        line-height: normal;
+        font-family: 'Playfair Display', serif;
+        display: block;
+        margin: 0 auto;
+
+
+    }
+    .headline.hl1{
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 10px 0 10px 0;
+
+    }
+
+    .headline.hl2{
+        font-weight: 400;
+        font-style: italic;
+        font-size: 24px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+
+    .headline.hl2:before{
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 7px;
+        display: block;
+        margin: 0 auto;
+    }
+    .headline.hl2:after{
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 13px;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .headline.hl3{
+        font-weight: 400;
+        font-style: italic;
+        font-size: 36px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl4{
+        font-weight: 700;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl4:before{
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 7px;
+        display: block;
+        margin: 0 auto;
+    }
+    .headline.hl4:after{
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 10px;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .headline.hl5{
+        font-weight: 400;
+        font-size: 42px;
+        text-transform: uppercase;
+        font-style: italic;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl6{
+        font-weight: 400;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl6:before{
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 7px;
+        display: block;
+        margin: 0 auto;
+    }
+    .headline.hl6:after{
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 10px;
+        display: block;
+        margin: 0 auto;
+
+    }
+    .headline.hl7{
+        font-weight: 700;
+        font-size: 12px;
+        box-sizing: border-box;
+        display: block;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl8{
+        font-weight: 700;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl9{
+        font-weight: 700;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .headline.hl10{
+        font-weight: 700;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .citation{
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        line-height: 44px;
+        /*font-style: italic;*/
+        text-align: center;
+        font-weight: 400;
+        display: block;
+        margin: 40px 0 40px 0;
+        font-feature-settings: "liga", "dlig";
+
+    }
+    .citation:before{
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 16px;
+        display: block;
+        margin: 0 auto;
+    }
+    .citation:after{
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 16px;
+        display: block;
+        margin: 0 auto;
+    }
+    .figure {
+        margin: 0 0 20px;
+    }
+    .figcaption{
+      font-style: italic;
+      font-size: 12px;
+    }
+
+  }
+
 }

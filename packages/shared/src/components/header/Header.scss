@@ -17,23 +17,23 @@
     line-height: 72px;
   }
 
-  aside {
+  .subheader {
     font-family: sans-serif;
     font-size: 20px;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
     text-transform: uppercase;
+    padding: 3px 0;
   }
 
   .header-box {
     position: relative;
-    width: 12%;
-    left: 10px;
+    width: 16%;
     border: 3px double #2f2f2f;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     line-height: 20px;
     display: inline-block;
-    margin: 0 50px 20px -360px;
+    margin: 0 50px 20px;
   }
 
   .header-icon-right {

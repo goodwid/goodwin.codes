@@ -7,15 +7,15 @@ const Home = () => {
 
   return (
     <main className={styles.Home}>
-      {/* <section className="column">
-        <Content />
-      </section>
       <section className="column">
         <Content />
       </section>
       <section className="column">
         <Content />
-      </section> */}
+      </section>
+      <section className="column">
+        <Content />
+      </section>
 
 
     </main>
